@@ -8,10 +8,10 @@ class APIClient:
     def __init__(self, base_url):
         self.base_url = base_url
 
-    def get(self, endpoint):
+    def get(self, endpoint, headers=None):
         url = self.base_url + endpoint
-        logger.info(f"GET: {url}")
-        response = requests.get(url)
+        logger.info(f"GET: {url} - Headers: {headers}")
+        response = requests.get(url, headers=headers)
         logger.info(f"Response: {response.status_code} - {response.text}")
         return response
 
