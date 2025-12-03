@@ -1,0 +1,5 @@
+BASE_URL = "https://practicetestautomation.com/"
+LOGIN_URL = BASE_URL + "practice-test-login/"
+USERNAME = "student"
+PASSWORD = "Password123"
+REPORTS_DIR = "reports"
